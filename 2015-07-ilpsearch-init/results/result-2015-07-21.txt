@@ -1,0 +1,52 @@
+args = [['ant'], ['ant', 'ant-junit'], ['ant', 'ant-junit', 'junit'], ['ant-junit', 'junit'], ['junit'], ['ant-junit']]
+magnifiers = [1, 10, 100, 1000]
+splits = [False, True]
+
+['ant']-1: 0.004636 0.000552 True
+['ant', 'ant-junit']-10: 0.024774 0.000525 False
+['junit']-100: 0.513461 0.022714 False
+['ant', 'ant-junit']-100: 0.204970 0.004284 False
+['ant', 'ant-junit', 'junit']-100: 0.730467 0.041591 False
+['ant', 'ant-junit']-10: 0.023285 0.001075 True
+['ant-junit', 'junit']-1000: 6.191998 0.248154 False
+['ant', 'ant-junit']-100: 0.188055 0.009734 True
+['ant-junit', 'junit']-1000: 5.318735 0.148470 True
+['ant-junit']-100: 0.075100 0.005973 False
+['ant', 'ant-junit']-1000: 2.086662 0.063077 False
+['junit']-10: 0.049691 0.007842 True
+['ant-junit']-100: 0.069033 0.004002 True
+['junit']-10: 0.053294 0.000598 False
+['ant-junit']-1: 0.004160 0.000933 True
+['ant', 'ant-junit', 'junit']-10: 0.070822 0.009093 True
+['ant-junit']-1: 0.003582 0.000065 False
+['ant', 'ant-junit']-1000: 1.862425 0.064107 True
+['junit']-1000: 4.629796 0.117290 True
+['ant-junit']-1000: 0.728608 0.019861 False
+['junit']-1000: 5.401661 0.242081 False
+['ant-junit', 'junit']-1: 0.010753 0.001519 False
+['ant-junit', 'junit']-1: 0.010093 0.000291 True
+['ant-junit']-10: 0.010007 0.000078 False
+['ant']-100: 0.120113 0.001098 True
+['ant', 'ant-junit', 'junit']-10: 0.077079 0.006086 False
+['ant-junit']-10: 0.009502 0.000154 True
+['junit']-1: 0.008101 0.000091 False
+['ant']-100: 0.139317 0.014907 False
+['junit']-1: 0.007671 0.000080 True
+['junit']-100: 0.444156 0.003675 True
+['ant', 'ant-junit']-1: 0.006753 0.000769 True
+['ant', 'ant-junit', 'junit']-100: 0.639645 0.047643 True
+['ant', 'ant-junit', 'junit']-1000: 6.638829 0.277544 True
+['ant', 'ant-junit']-1: 0.006702 0.000070 False
+['ant']-10: 0.017215 0.003017 True
+['ant-junit']-1000: 0.661813 0.018081 True
+['ant', 'ant-junit', 'junit']-1: 0.019409 0.004038 False
+['ant', 'ant-junit', 'junit']-1000: 7.664357 0.375658 False
+['ant']-10: 0.017722 0.003295 False
+['ant', 'ant-junit', 'junit']-1: 0.013608 0.001391 True
+['ant-junit', 'junit']-100: 0.587205 0.013220 False
+['ant']-1000: 1.194599 0.023593 True
+['ant-junit', 'junit']-100: 0.536030 0.061370 True
+['ant-junit', 'junit']-10: 0.063143 0.003274 False
+['ant']-1: 0.004790 0.000497 False
+['ant']-1000: 1.321321 0.013341 False
+['ant-junit', 'junit']-10: 0.055348 0.003324 True
