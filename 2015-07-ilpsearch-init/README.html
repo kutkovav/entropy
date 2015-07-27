@@ -6,6 +6,16 @@
 </head>
 <body>
 <h1>Finding Optimal Compatible Set of Software Components Using Integer Linear Programming</h1>
+<p>Jakub Danek and Premek Brada</p>
+
+<p>NTIS -- New Technologies for the Information Society,
+Faculty of Applied Sciences,
+University of West Bohemia,
+Univerzitni 8, 306 14 Pilsen
+Czech Republic</p>
+
+<hr/>
+
 <p>This experiment verifies performance of the integer linear programming model used
     for selecting the optimal set of component satisfying given requirements.</p>
 <h2>Simulation Scenarios</h2>
@@ -28,16 +38,22 @@
 <p>The experiment is based on number of associations between <em>lucene</em> search engine and
     the libraries <em>ant</em>, <em>ant-junit</em> and <em>junit</em>. The <a href="data/">input data</a> are provided in form of
     a properties file per library. Its structure is:</p>
-<pre><code>[versions]
+<pre>
+    <code>
+    [versions]
     version_name=binary_size_in_kB
     .
     .
     .
     [refs]
-    lucene=nb_of_unique_associations</code></pre>
+    lucene=nb_of_unique_associations
+    </code>
+</pre>
 <h2>Results</h2>
 <p><a href="results/">Results</a> files have the following structure:</p>
-<pre><code>args=[list of all library combinations that were searched for]
+<pre>
+    <code>
+    args=[list of all library combinations that were searched for]
     magnifiers=[list of all magnifier values used]
     split=[true|false] //if true, simulation data were generated so that there was only a single feasible solution in the data set
 
@@ -45,14 +61,19 @@
     (arg)-magnifier: &lt;mean_value&gt; &lt;std_deviation&gt; &lt;split_value&gt;
     .
     .
-    .</code></pre>
+    .
+    </code>
+</pre>
 <h2>Source Code</h2>
-<p>The <a href="code/">simulation code</a> is written in Python 2.7 using <a href="www.gurobi.com">Gurobi</a> solver and its python binding.
+<p>The <a href="code/">simulation code</a> is written in Python 2.7 using <a href="www.gurobi.com">Gurobi</a> solver and its Python binding.
     The code is split into three modules:</p>
 <ul>
     <li>data - handles reading the source data files and generating data from them</li>
     <li>stats - convenience utility class for statistics</li>
     <li>run.py - contains the experimental model as well as the code responsible for running or requested simulation scenarios</li>
 </ul>
+
+<h2>Licensing</h2>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Finding Optimal Compatible Set of Software Components Using Integer Linear Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://relisa.kiv.zcu.cz/" property="cc:attributionName" rel="cc:attributionURL">Jakub Danek, Premek Brada</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 </body>
 </html>

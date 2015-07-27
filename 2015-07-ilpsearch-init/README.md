@@ -1,4 +1,13 @@
 #Finding Optimal Compatible Set of Software Components Using Integer Linear Programming
+Jakub Danek and Premek Brada
+
+NTIS -- New Technologies for the Information Society, 
+Faculty of Applied Sciences, 
+University of West Bohemia, 
+Univerzitni 8, 306 14 Pilsen
+Czech Republic
+
+---
 
 This experiment verifies performance of the integer linear programming model used
  for selecting the optimal set of component satisfying given requirements.
@@ -58,3 +67,6 @@ The code is split into three modules:
 * data - handles reading the source data files and generating data from them
 * stats - convenience utility class for statistics
 * run.py - contains the experimental model as well as the code responsible for running or requested simulation scenarios
+
+##Licensing
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Finding Optimal Compatible Set of Software Components Using Integer Linear Programming</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://relisa.kiv.zcu.cz/" property="cc:attributionName" rel="cc:attributionURL">Jakub Danek, Premek Brada</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
